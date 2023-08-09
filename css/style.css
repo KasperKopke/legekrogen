@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #355674;
+}
+nav ul {
+  display: flex;
+  flex: 1;
+  gap: 75px;
+  list-style-type: none;
+  align-items: center;
+  padding: 10px 10%;
+}
+nav ul li a {
+  font-size: 18px;
+  color: white;
+  font-weight: 100;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+nav ul li:first-child {
+  margin-right: auto;
+}
+nav ul li:first-child img {
+  max-width: 114px;
+}
+header {
+  height: 92.7vh;
+  background-image: url(/assets/heros/forsiden2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
