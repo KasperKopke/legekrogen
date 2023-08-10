@@ -36,9 +36,261 @@ nav ul li:first-child img {
   max-width: 114px;
 }
 header {
-  height: 92.7vh;
-  background-image: url(/assets/heros/forsiden2.jpg);
+  height: 90.5vh;
+  background-image: url(../assets/heros/forsiden2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+}
+.overlay {
+  height: 100%;
+  background-color: #c1adce93;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.fragt {
+  background-color: #d7e6ec;
+  padding: 0.3%;
+  text-align: center;
+  font-size: 14px;
+}
+h1 {
+  font-family: "Square Peg", cursive;
+  margin-bottom: 5px;
+  font-weight: 100;
+  font-size: 65px;
+}
+.overlay a {
+  padding: 10px 252px;
+  background-color: #9478a7;
+  border-radius: 50px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+}
+.overlay p {
+  margin-bottom: 75px;
+}
+.toys h2 {
+  font-size: 40px;
+  font-family: "Square Peg", cursive;
+  font-weight: 100;
+}
+.toys {
+  background-color: #c1adce;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5%;
+}
+.p-tag-toys {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-bottom: 75px;
+}
+.toys-article article img {
+  width: 100%;
+  border-radius: 13px 13px 0px 0px;
+}
+.toys-article-buttom {
+  padding: 4%;
+  margin-top: -4px;
+  background-color: #9478a7;
+  border-radius: 0px 0px 13px 13px;
+}
+.toys-article-buttom h3 {
+  font-size: 18px;
+}
+.toys-h3 {
+  font-weight: 100;
+}
+.toys-article article {
+  max-width: 280px;
+}
+.toys-article-buttom p {
+  font-size: 22px;
+  margin-top: 12px;
+}
+.toys-article {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 75px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.discount-prod {
+  position: relative;
+}
+.discount {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #d7e6ec;
+  padding: 5%;
+  color: black;
+  border-radius: 50%;
+}
+.toys a {
+  text-align: center;
+  width: 37%;
+  padding: 0.8%;
+  color: white;
+  border-radius: 25px;
+  border: 1px solid white;
+}
+.statements h2 {
+  font-size: 40px;
+  font-family: "Square Peg", cursive;
+  font-weight: 100;
+}
+
+.statements {
+  padding: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.statements-articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 55px;
+}
+.statements-articles article {
+  border-radius: 13px;
+  max-width: 355px;
+  padding: 5%;
+  background-color: #d7e6ec4d;
+}
+.statements-articles article p {
+  color: #355674;
+}
+.statements-articles article h3 {
+  font-size: 28px;
+  font-family: "Square Peg", cursive;
+  font-weight: 100;
+  color: #9478a7;
+  margin-top: 15px;
+}
+.club {
+  background-image: url(../assets/heros/produkter.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.club-overlay p {
+  max-width: 17%;
+  text-align: center;
+}
+.club-overlay h2 {
+  font-size: 75px;
+  font-weight: 200;
+  font-family: "Square Peg", cursive;
+  margin-bottom: 50px;
+}
+.club-overlay {
+  background-color: #355674b2;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.form-tag {
+  width: 30%;
+}
+input {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 2.5%;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  border-radius: 125px;
+  color: white;
+  outline: none;
+}
+::placeholder {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  outline: none;
+  color: white;
+  border-radius: 13px;
+  padding: 12px 12px;
+}
+button {
+  width: 100%;
+  padding: 2.3%;
+  border-radius: 13px;
+  outline: none;
+  border: none;
+  margin-top: 30px;
+  background-color: #9478a7;
+  color: white;
+  cursor: pointer;
+}
+footer {
+  padding: 6%;
+  background-color: #355674;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.foot {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.foot h3 {
+  font-family: "Square Peg", cursive;
+  font-size: 35px;
+  font-weight: 100;
+}
+.footer-right img {
+  width: 50%;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-center i {
+  font-size: 53px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 750px) {
+  .club-overlay p {
+    max-width: 60%;
+  }
+  .form-tag {
+    width: 67%;
+  }
+  footer {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer-left {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .overlay a {
+    padding: 10px 132px;
+  }
 }

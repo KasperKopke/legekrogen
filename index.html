@@ -9,21 +9,24 @@
       src="https://kit.fontawesome.com/472910ecc6.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/css/style.css" />
-    <script src="/js/app.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/app.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;600;900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;600;900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Square+Peg&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <div class="fragt">
+      <p><i class="fa-solid fa-truck"></i> Fri fragt ved køb over 499,-</p>
+    </div>
     <nav>
       <ul>
         <li>
           <a href="#"
-            ><img src="/assets/logo/legekrogen_logo.png" alt="logo"
+            ><img src="./assets/logo/legekrogen_logo.png" alt="logo"
           /></a>
         </li>
         <li><a href="#">Legetøj</a></li>
@@ -31,6 +34,151 @@
         <li><a href="#">Kundeklub</a></li>
       </ul>
     </nav>
-    <header></header>
+    <header>
+      <div class="overlay">
+        <h1>At lege er at leve</h1>
+        <p>Her hos os har vi et stort udvalg af legetøj i høj kvalitet</p>
+        <a href="#">læs mere ></a>
+      </div>
+    </header>
+    <section class="toys">
+      <h2>Et udpluk af vores</h2>
+      <p class="p-tag-toys">legetøj</p>
+      <div class="toys-article">
+        <article>
+          <div class="toys-article-top">
+            <img src="./assets/products/product1.jpg" alt="Tandlægesæt i træ" />
+          </div>
+          <div class="toys-article-buttom">
+            <h3 class="toys-h3">Tiny Republic Play</h3>
+            <h3>Tandlægesæt i træ</h3>
+            <p>849 kr</p>
+          </div>
+        </article>
+
+        <article>
+          <div class="toys-article-top">
+            <img src="./assets/products/product2.jpg" alt="Tandlægesæt i træ" />
+          </div>
+          <div class="toys-article-buttom">
+            <h3 class="toys-h3">Kids Concept</h3>
+            <h3>Edvin gåvogn</h3>
+            <p>499 kr</p>
+          </div>
+        </article>
+
+        <article>
+          <div class="toys-article-top discount-prod">
+            <img src="./assets/products/product3.jpg" alt="Tandlægesæt i træ" />
+            <div class="discount"><h2>30 %</h2></div>
+          </div>
+          <div class="toys-article-buttom">
+            <h3 class="toys-h3">Vilac</h3>
+            <h3>Fire på stribe spil</h3>
+            <p>69,30 kr</p>
+          </div>
+        </article>
+
+        <article>
+          <div class="toys-article-top">
+            <img src="./assets/products/product4.jpg" alt="Tandlægesæt i træ" />
+          </div>
+          <div class="toys-article-buttom">
+            <h3 class="toys-h3">Tiny Republic Play</h3>
+            <h3>Isbod i træ</h3>
+            <p>259 kr</p>
+          </div>
+        </article>
+      </div>
+      <a href="#">GÅ TIL LEGETØJ > </a>
+    </section>
+    <section class="statements">
+      <h2>Vores kunder</h2>
+      <p class="p-tag-toys">UDTALER</p>
+
+      <div class="statements-articles">
+        <article>
+          <p>
+            “Pakken kom dagen efter jeg bestilte. Der blev jeg positivt
+            overrasket, da der står på deres hjemmeside at leveringstiden er 2-4
+            hverdage. Og min lille Hugo elsker sin nye træhest.”
+          </p>
+
+          <h3>- Heidi, mor til Hugo på 3 år</h3>
+        </article>
+
+        <article>
+          <p>
+            “Efter min gode ven Lars tippede mig om Legekrogen.dk, har jeg ikke
+            længere problemer med at købe de perfekte julegaver. Tak til
+            Legekrogen. Og Lars”
+          </p>
+
+          <h3>- Karsten Hansen, Morfar</h3>
+        </article>
+
+        <article>
+          <p>
+            “Jeg fik varen tilsendt i den forkerte farve, men da jeg kontaktede
+            Legekrogens kundeservice, var de meget hurtige til at sende mig den
+            rigtige farve. Jeg fik endda en gratis slikpose med. Det var meget
+            lækkert”
+          </p>
+
+          <h3>- Omar, onkel til Anton på 11 år</h3>
+        </article>
+      </div>
+    </section>
+    <section class="club">
+      <div class="club-overlay">
+        <p>Kunne du også tænke dig at blive medlem af vores</p>
+        <h2>Kundeklub?</h2>
+
+        <div class="form-tag">
+          <form action="/" method="get">
+            <input
+              type="text"
+              name="fornavn"
+              id="fornavn"
+              placeholder="Fulde navn"
+            />
+            <br />
+            <input
+              type="text"
+              name="fornavn"
+              id="fornavn"
+              placeholder="Email"
+            />
+            <br />
+            <textarea
+              name="besked"
+              id="besked"
+              style="resize: none"
+              placeholder="Hvem køber du legetøj til?"
+            ></textarea>
+            <button type="submit">BLIV MEDLEM NU!</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-left foot">
+        <h3>Kundeservice</h3>
+        <p>kontakt@legehjørnet.dk</p>
+        <p>+45 23 45 67 89</p>
+      </div>
+
+      <div class="footer-center foot">
+        <h3>Følg os</h3>
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+
+      <div class="footer-right foot">
+        <img src="./assets/logo/legekrogen_logo.png" alt="logo" />
+      </div>
+    </footer>
   </body>
 </html>
