@@ -11,6 +11,7 @@ nav {
   justify-content: end;
   align-items: center;
   background-color: #355674;
+  height: 80px;
 }
 nav ul {
   display: flex;
@@ -41,6 +42,9 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+}
+.button-hover:hover {
+  background-color: rgb(195, 45, 45);
 }
 .overlay {
   height: 100%;
@@ -273,6 +277,13 @@ footer {
   font-size: 53px;
   margin-right: 10px;
 }
+.fa-bars,
+.fa-x {
+  display: none;
+}
+.res-logo {
+  display: none;
+}
 @media screen and (max-width: 750px) {
   .club-overlay p {
     max-width: 60%;
@@ -286,6 +297,51 @@ footer {
   }
   .footer-left {
     align-items: center;
+  }
+}
+@media screen and (max-width: 720px) {
+  .fa-bars,
+  .fa-x {
+    display: flex;
+    margin-right: 25px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+  }
+  nav.active .fa-bars {
+    display: none;
+  }
+  nav.active .fa-x {
+    display: flex;
+  }
+  .fa-x {
+    display: none;
+  }
+  nav ul li:first-child {
+    margin-right: 0;
+  }
+  nav {
+    position: relative;
+  }
+  nav ul {
+    position: absolute;
+    flex-direction: column;
+    top: 15px;
+    height: 100vh;
+    left: -100%;
+    background-color: #355674;
+    transition: all 0.2s ease-in-out;
+  }
+
+  nav.active ul {
+    left: 0%;
+    transition: all 0.2s ease-in-out;
+  }
+  .res-logo {
+    display: inline;
+    max-width: 150px;
+    margin-right: auto;
+    margin-left: 25px;
   }
 }
 
