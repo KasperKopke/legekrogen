@@ -38,17 +38,24 @@
       </ul>
     </nav>
     <header>
-      <div class="overlay">
-        <h1>At lege er at leve</h1>
-        <p>Her hos os har vi et stort udvalg af legetøj i høj kvalitet</p>
-        <a class="button-hover" href="#">læs mere ></a>
-      </div>
+      
+      <div class="slider-wrapper" id="slider01">
+        <div class="slides">
+         
+  
+       
+          <div class="overlay">
+            <h1>At lege er at leve</h1>
+            <p>Her hos os har vi et stort udvalg af legetøj i høj kvalitet</p>
+            <a class="button-hover" href="#">læs mere ></a>
+          </div> 
+    
     </header>
     <section class="toys">
       <h2>Et udpluk af vores</h2>
       <p class="p-tag-toys">legetøj</p>
       <div class="toys-article">
-        <article>
+        <!-- <article>
           <div class="toys-article-top">
             <img src="./assets/products/product1.jpg" alt="Tandlægesæt i træ" />
           </div>
@@ -91,7 +98,7 @@
             <h3>Isbod i træ</h3>
             <p>259 kr</p>
           </div>
-        </article>
+        </article> -->
       </div>
       <a class="button-hover" href="#">GÅ TIL LEGETØJ > </a>
     </section>
@@ -100,7 +107,7 @@
       <p class="p-tag-toys">UDTALER</p>
 
       <div class="statements-articles">
-        <article>
+      <!--   <article>
           <p>
             “Pakken kom dagen efter jeg bestilte. Der blev jeg positivt
             overrasket, da der står på deres hjemmeside at leveringstiden er 2-4
@@ -129,7 +136,7 @@
           </p>
 
           <h3>- Omar, onkel til Anton på 11 år</h3>
-        </article>
+        </article> -->
       </div>
     </section>
     <section class="club">
@@ -140,23 +147,29 @@
         <div class="form-tag">
           <form action="/" method="get">
             <input
+            minlength="2"
               type="text"
               name="fornavn"
               id="fornavn"
               placeholder="Fulde navn"
+              required
             />
             <br />
             <input
-              type="text"
-              name="fornavn"
-              id="fornavn"
+          
+              type="email"
+              name="mail"
+              id="mail"
               placeholder="Email"
+              required
             />
             <br />
             <textarea
+            minlength="3"
               name="besked"
               id="besked"
               style="resize: none"
+              required  
               placeholder="Hvem køber du legetøj til?"
             ></textarea>
             <button class="button-hover" type="submit">BLIV MEDLEM NU!</button>
